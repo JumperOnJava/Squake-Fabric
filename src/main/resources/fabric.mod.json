@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "squake",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "Mod template for JavaJumper's mods",
+  "name": "Squake",
+  "description": "A Quake-style movement mod for Minecraft. Originally made by squeek502, ported to newer versions by Zeitheron, ported to fabric by JavaJumper",
   "authors": [
+    "Zeitheron",
     "JavaJumper"
   ],
   "contact": {
@@ -14,23 +15,30 @@
   },
 
   "license": "GPL v3",
-  "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "client": [
-      "io.github.javajump3r.mod.ModInit"
+      "org.zeith.comm12.squake.Squake"
+    ],
+    "main": [
+      "org.zeith.comm12.squake.Squake"
+    ],
+    "modmenu": [
+      "org.zeith.comm12.squake.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "squake.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.14",
     "fabric-api": "*",
     "minecraft": "~1.19.3",
-    "java": ">=17"
+    "java": ">=17",
+    "yet-another-config-lib": ">=2.2.0",
+    "jjautoconfig": "1.0.1"
   },
   "custom": {
     "modmenu": {
