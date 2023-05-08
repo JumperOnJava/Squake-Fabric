@@ -14,7 +14,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.chunk.ChunkStatus;
-import org.zeith.comm12.squake.mixins.MixinLivingEntity;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -273,7 +272,7 @@ public class SquakeClientPlayer
 
 	private static boolean isJumping(PlayerEntity player)
 	{
-		return ((MixinLivingEntity)player).getJumping();
+		return player.jumping;
 	}
 
 	/* =================================================

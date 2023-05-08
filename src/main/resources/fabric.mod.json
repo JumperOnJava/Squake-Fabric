@@ -13,7 +13,7 @@
     "homepage": "https://javajump3r.github.io/",
     "sources": "https://github.com/JavaJump3r/"
   },
-
+  "accessWidener" : "squake.accesswidener",
   "license": "GPL v3",
 
   "environment": "*",

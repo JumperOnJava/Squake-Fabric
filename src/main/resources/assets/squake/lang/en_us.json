@@ -3,6 +3,7 @@
   "squake.key.toggle": "Toggle Movement System",
   "squake.key.toggle.enabled": "Movement system enabled",
   "squake.key.toggle.disabled": "Movement system disabled",
+  "Squake-fabric.categoryName.Common": "Squake Config",
   "Squake-fabric.Common.ENABLED": "Quake-Style Movement Enabled",
   "Squake-fabric.Common.UNCAPPED_BUNNYHOP_ENABLED": "Uncapped Bunnyhop",
   "Squake-fabric.Common.SHARKING_ENABLED": "Sharking",
